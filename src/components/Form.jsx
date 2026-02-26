@@ -32,13 +32,13 @@ const Form = ({ regNo, setRegNo, setShowTicketCard, msg }) => {
         <div className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
-              Registration Number
+              College Mail ID
             </label>
 
             <input
               onChange={(e) => setRegNo(e.target.value)}
               type="text"
-              placeholder="Enter your registration number"
+              placeholder="Enter your college mail id"
               className="w-full h-14 px-4 rounded-xl border border-gray-300 text-base placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200 bg-white shadow-sm"
             />
           </div>
