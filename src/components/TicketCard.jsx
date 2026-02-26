@@ -12,7 +12,7 @@ const TicketCard = ({ regNo, onClose }) => {
   const fetchTicketDetails = async () => {
     try {
       const response = await fetch(
-        `https://event-attendance-production.up.railway.app/api/tickets/events/tickets/${regNo}`
+        `https://event-attendance-production.up.railway.app/api/tickets/events/tickets/${encodeURIComponent(regNo)}`
       );
 
       if (!response.ok) {
